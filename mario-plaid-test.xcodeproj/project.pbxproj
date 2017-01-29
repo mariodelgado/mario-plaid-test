@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC3F3C161E3EA6DA00207274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */; };
+		AC3F3C181E3EA6DA00207274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC3F3C171E3EA6DA00207274 /* ViewController.swift */; };
+		AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C191E3EA6DA00207274 /* Main.storyboard */; };
+		AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */; };
+		AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC3F3C121E3EA6DA00207274 /* mario-plaid-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mario-plaid-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AC3F3C171E3EA6DA00207274 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC3F3C1A1E3EA6DA00207274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC3F3C1F1E3EA6DA00207274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC3F3C211E3EA6DA00207274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC3F3C0F1E3EA6DA00207274 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC3F3C091E3EA6DA00207274 = {
+			isa = PBXGroup;
+			children = (
+				AC3F3C141E3EA6DA00207274 /* mario-plaid-test */,
+				AC3F3C131E3EA6DA00207274 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC3F3C131E3EA6DA00207274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F3C121E3EA6DA00207274 /* mario-plaid-test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC3F3C141E3EA6DA00207274 /* mario-plaid-test */ = {
+			isa = PBXGroup;
+			children = (
+				AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */,
+				AC3F3C171E3EA6DA00207274 /* ViewController.swift */,
+				AC3F3C191E3EA6DA00207274 /* Main.storyboard */,
+				AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */,
+				AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */,
+				AC3F3C211E3EA6DA00207274 /* Info.plist */,
+			);
+			path = "mario-plaid-test";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC3F3C111E3EA6DA00207274 /* mario-plaid-test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC3F3C241E3EA6DA00207274 /* Build configuration list for PBXNativeTarget "mario-plaid-test" */;
+			buildPhases = (
+				AC3F3C0E1E3EA6DA00207274 /* Sources */,
+				AC3F3C0F1E3EA6DA00207274 /* Frameworks */,
+				AC3F3C101E3EA6DA00207274 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mario-plaid-test";
+			productName = "mario-plaid-test";
+			productReference = AC3F3C121E3EA6DA00207274 /* mario-plaid-test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC3F3C0A1E3EA6DA00207274 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mario Delgado";
+				TargetAttributes = {
+					AC3F3C111E3EA6DA00207274 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC3F3C0D1E3EA6DA00207274 /* Build configuration list for PBXProject "mario-plaid-test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC3F3C091E3EA6DA00207274;
+			productRefGroup = AC3F3C131E3EA6DA00207274 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC3F3C111E3EA6DA00207274 /* mario-plaid-test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC3F3C101E3EA6DA00207274 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */,
+				AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */,
+				AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC3F3C0E1E3EA6DA00207274 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3F3C181E3EA6DA00207274 /* ViewController.swift in Sources */,
+				AC3F3C161E3EA6DA00207274 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC3F3C191E3EA6DA00207274 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3F3C1A1E3EA6DA00207274 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC3F3C1F1E3EA6DA00207274 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC3F3C221E3EA6DA00207274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC3F3C231E3EA6DA00207274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC3F3C251E3EA6DA00207274 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mario-plaid-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mariodelgado.mario-plaid-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AC3F3C261E3EA6DA00207274 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "mario-plaid-test/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "mariodelgado.mario-plaid-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC3F3C0D1E3EA6DA00207274 /* Build configuration list for PBXProject "mario-plaid-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3F3C221E3EA6DA00207274 /* Debug */,
+				AC3F3C231E3EA6DA00207274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC3F3C241E3EA6DA00207274 /* Build configuration list for PBXNativeTarget "mario-plaid-test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC3F3C251E3EA6DA00207274 /* Debug */,
+				AC3F3C261E3EA6DA00207274 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC3F3C0A1E3EA6DA00207274 /* Project object */;
+}
