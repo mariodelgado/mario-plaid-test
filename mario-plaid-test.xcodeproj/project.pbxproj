@@ -12,9 +12,13 @@
 		AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C191E3EA6DA00207274 /* Main.storyboard */; };
 		AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */; };
 		AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */; };
+		ACF5AD991E3EA9E10040ED4A /* Plaid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5AD981E3EA9E10040ED4A /* Plaid.swift */; };
+		AD07FDB8B37BA315C9810B37 /* Pods_mario_plaid_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914D09B37D7DE5C82907248C /* Pods_mario_plaid_test.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3920359ADB02F5243970D24F /* Pods-mario-plaid-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario-plaid-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test.release.xcconfig"; sourceTree = "<group>"; };
+		914D09B37D7DE5C82907248C /* Pods_mario_plaid_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mario_plaid_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F3C121E3EA6DA00207274 /* mario-plaid-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mario-plaid-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC3F3C171E3EA6DA00207274 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3F3C1F1E3EA6DA00207274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3F3C211E3EA6DA00207274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF5AD981E3EA9E10040ED4A /* Plaid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plaid.swift; sourceTree = "<group>"; };
+		CA3C7C09C94449E66A95C745 /* Pods-mario-plaid-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario-plaid-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD07FDB8B37BA315C9810B37 /* Pods_mario_plaid_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16DC07FC30F8697F85677576 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA3C7C09C94449E66A95C745 /* Pods-mario-plaid-test.debug.xcconfig */,
+				3920359ADB02F5243970D24F /* Pods-mario-plaid-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5AA42F63D559C83A66DE6123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				914D09B37D7DE5C82907248C /* Pods_mario_plaid_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC3F3C091E3EA6DA00207274 = {
 			isa = PBXGroup;
 			children = (
 				AC3F3C141E3EA6DA00207274 /* mario-plaid-test */,
 				AC3F3C131E3EA6DA00207274 /* Products */,
+				16DC07FC30F8697F85677576 /* Pods */,
+				5AA42F63D559C83A66DE6123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 			children = (
 				AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */,
 				AC3F3C171E3EA6DA00207274 /* ViewController.swift */,
+				ACF5AD981E3EA9E10040ED4A /* Plaid.swift */,
 				AC3F3C191E3EA6DA00207274 /* Main.storyboard */,
 				AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */,
 				AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */,
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC3F3C241E3EA6DA00207274 /* Build configuration list for PBXNativeTarget "mario-plaid-test" */;
 			buildPhases = (
+				820FDDFCDCFA1B9CEF35606E /* [CP] Check Pods Manifest.lock */,
 				AC3F3C0E1E3EA6DA00207274 /* Sources */,
 				AC3F3C0F1E3EA6DA00207274 /* Frameworks */,
 				AC3F3C101E3EA6DA00207274 /* Resources */,
+				75CC85E5D3C28DB18C04AFEC /* [CP] Embed Pods Frameworks */,
+				340FE07336E744210C8B3BD7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		340FE07336E744210C8B3BD7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75CC85E5D3C28DB18C04AFEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		820FDDFCDCFA1B9CEF35606E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC3F3C0E1E3EA6DA00207274 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +216,7 @@
 			files = (
 				AC3F3C181E3EA6DA00207274 /* ViewController.swift in Sources */,
 				AC3F3C161E3EA6DA00207274 /* AppDelegate.swift in Sources */,
+				ACF5AD991E3EA9E10040ED4A /* Plaid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +335,7 @@
 		};
 		AC3F3C251E3EA6DA00207274 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA3C7C09C94449E66A95C745 /* Pods-mario-plaid-test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mario-plaid-test/Info.plist";
@@ -268,6 +348,7 @@
 		};
 		AC3F3C261E3EA6DA00207274 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3920359ADB02F5243970D24F /* Pods-mario-plaid-test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "mario-plaid-test/Info.plist";
@@ -297,6 +378,7 @@
 				AC3F3C261E3EA6DA00207274 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
