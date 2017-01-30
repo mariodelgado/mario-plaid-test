@@ -7,4 +7,6 @@ target 'mario-plaid-test' do
 
   # Pods for mario-plaid-test
 pod 'AFNetworking', '~> 3.0'
+pod 'plaid-ios-sdk'
+pod 'plaid-ios-link'
 end

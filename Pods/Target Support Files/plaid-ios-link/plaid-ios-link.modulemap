@@ -1,0 +1,6 @@
+framework module plaid_ios_link {
+  umbrella header "plaid-ios-link-umbrella.h"
+
+  export *
+  module * { export * }
+}

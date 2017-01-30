@@ -17,10 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Plaid.initializePlaid(clientId: "54e8c84f89406c5560608753", secret: "01febc850352d1e1bae806a6e839d4", appStatus: .Testing)
+       // Plaid.initializePlaid(clientId: "54e8c84f89406c5560608753", secret: "01febc850352d1e1bae806a6e839d4", appStatus: .Testing)
 
         
-        
+        Plaid.sharedInstance().setPublicKey("871761da2db20e4e8e3472f825f1d9")
+
         
         
         return true

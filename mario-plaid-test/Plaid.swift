@@ -25,7 +25,7 @@ struct Plaid {
     }
 }
 
-let session = NSURLSession.sharedSession()
+let session = URLSession.sharedSession()
 
 enum BaseURL {
     case Production
@@ -147,7 +147,7 @@ public struct Transaction {
 
 //MARK: Add Connect or Auth User
 
-func PS_addUser(userType: Type, username: String, password: String, pin: String?, institution: Institution, completion: (response: NSURLResponse?, accessToken:String, mfaType:String?, mfa:[[String:AnyObject]]?, accounts: [Account]?, transactions: [Transaction]?, error:NSError?) -> ()) {
+func PS_addUser(userType: Type, username: String, password: String, pin: String?, institution: Institution, completion: (response: URLResponse?, accessToken:String, mfaType:String?, mfa:[[String:AnyObject]]?, accounts: [Account]?, transactions: [Transaction]?, error:NSError?) -> ()) {
     let baseURL = Plaid.baseURL!
     let clientId = Plaid.clientId!
     let secret = Plaid.secret!

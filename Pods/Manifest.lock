@@ -14,13 +14,20 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - plaid-ios-link (0.2.1):
+    - plaid-ios-sdk
+  - plaid-ios-sdk (0.3.6)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - plaid-ios-link
+  - plaid-ios-sdk
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  plaid-ios-link: 0ef45f18cdb2d1c3b9eaf6c2b457c950909df725
+  plaid-ios-sdk: e9865b0fe6a79b3d30d886171d7a26f7e1408935
 
-PODFILE CHECKSUM: fbb5125d6d1dc14fe1b2b40d396c2469378e7c37
+PODFILE CHECKSUM: dc4743257f4a53b403e80ae8f07ae69ef6112f09
 
 COCOAPODS: 1.2.0

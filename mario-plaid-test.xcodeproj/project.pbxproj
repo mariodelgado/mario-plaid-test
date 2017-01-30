@@ -12,7 +12,6 @@
 		AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C191E3EA6DA00207274 /* Main.storyboard */; };
 		AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */; };
 		AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */; };
-		ACF5AD991E3EA9E10040ED4A /* Plaid.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF5AD981E3EA9E10040ED4A /* Plaid.swift */; };
 		AD07FDB8B37BA315C9810B37 /* Pods_mario_plaid_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914D09B37D7DE5C82907248C /* Pods_mario_plaid_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,7 @@
 		AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC3F3C1F1E3EA6DA00207274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3F3C211E3EA6DA00207274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACF5AD981E3EA9E10040ED4A /* Plaid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Plaid.swift; sourceTree = "<group>"; };
+		ACDC58661E3EAD0C004960C7 /* mario-plaid-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mario-plaid-test-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		CA3C7C09C94449E66A95C745 /* Pods-mario-plaid-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario-plaid-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,9 +79,9 @@
 		AC3F3C141E3EA6DA00207274 /* mario-plaid-test */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC58661E3EAD0C004960C7 /* mario-plaid-test-Bridging-Header.h */,
 				AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */,
 				AC3F3C171E3EA6DA00207274 /* ViewController.swift */,
-				ACF5AD981E3EA9E10040ED4A /* Plaid.swift */,
 				AC3F3C191E3EA6DA00207274 /* Main.storyboard */,
 				AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */,
 				AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */,
@@ -216,7 +215,6 @@
 			files = (
 				AC3F3C181E3EA6DA00207274 /* ViewController.swift in Sources */,
 				AC3F3C161E3EA6DA00207274 /* AppDelegate.swift in Sources */,
-				ACF5AD991E3EA9E10040ED4A /* Plaid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +340,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mariodelgado.mario-plaid-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mario-plaid-test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -355,6 +354,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mariodelgado.mario-plaid-test";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mario-plaid-test-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
