@@ -9,12 +9,27 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Haneke.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 		<key>Pods-mario-plaid-test.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>plaid-ios-link-Resources.xcscheme</key>
 		<dict>
@@ -49,6 +64,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>33F2BD901302B7F51824B3606AEC1E7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3A374D5128799F080A6DD02B7E8FA14E</key>
 		<dict>
 			<key>primary</key>
@@ -60,6 +80,21 @@
 			<true/>
 		</dict>
 		<key>5497B6D858FAFE82E64CA36386879262</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64EA08164C9A54AA5424D119BDD66951</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9C9A027BD2B54E970B7931EF41EE0163</key>
 		<dict>
 			<key>primary</key>
 			<true/>

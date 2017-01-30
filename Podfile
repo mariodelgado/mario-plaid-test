@@ -6,7 +6,9 @@ target 'mario-plaid-test' do
   use_frameworks!
 
   # Pods for mario-plaid-test
-pod 'AFNetworking', '~> 3.0'
+pod 'Alamofire'
+pod 'Haneke'
+pod 'SwiftyJSON'
 pod 'plaid-ios-sdk'
 pod 'plaid-ios-link'
 end

@@ -12,6 +12,10 @@
 		AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C191E3EA6DA00207274 /* Main.storyboard */; };
 		AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */; };
 		AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */; };
+		ACDC587B1E3EDCCA004960C7 /* fruit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ACDC587A1E3EDCCA004960C7 /* fruit.jpg */; };
+		ACDC587F1E3EF9FC004960C7 /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC587E1E3EF9FC004960C7 /* accountViewController.swift */; };
+		ACDC58811E3EFB44004960C7 /* accountCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC58801E3EFB44004960C7 /* accountCollectionViewCell.swift */; };
+		ACDC58831E3F04EC004960C7 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDC58821E3F04EC004960C7 /* DataModel.swift */; };
 		AD07FDB8B37BA315C9810B37 /* Pods_mario_plaid_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 914D09B37D7DE5C82907248C /* Pods_mario_plaid_test.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +30,10 @@
 		AC3F3C1F1E3EA6DA00207274 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC3F3C211E3EA6DA00207274 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACDC58661E3EAD0C004960C7 /* mario-plaid-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mario-plaid-test-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		ACDC587A1E3EDCCA004960C7 /* fruit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fruit.jpg; sourceTree = "<group>"; };
+		ACDC587E1E3EF9FC004960C7 /* accountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
+		ACDC58801E3EFB44004960C7 /* accountCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = accountCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACDC58821E3F04EC004960C7 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		CA3C7C09C94449E66A95C745 /* Pods-mario-plaid-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mario-plaid-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mario-plaid-test/Pods-mario-plaid-test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +87,7 @@
 		AC3F3C141E3EA6DA00207274 /* mario-plaid-test */ = {
 			isa = PBXGroup;
 			children = (
+				ACDC58691E3ED151004960C7 /* assets */,
 				ACDC58661E3EAD0C004960C7 /* mario-plaid-test-Bridging-Header.h */,
 				AC3F3C151E3EA6DA00207274 /* AppDelegate.swift */,
 				AC3F3C171E3EA6DA00207274 /* ViewController.swift */,
@@ -86,8 +95,19 @@
 				AC3F3C1C1E3EA6DA00207274 /* Assets.xcassets */,
 				AC3F3C1E1E3EA6DA00207274 /* LaunchScreen.storyboard */,
 				AC3F3C211E3EA6DA00207274 /* Info.plist */,
+				ACDC587E1E3EF9FC004960C7 /* accountViewController.swift */,
+				ACDC58801E3EFB44004960C7 /* accountCollectionViewCell.swift */,
+				ACDC58821E3F04EC004960C7 /* DataModel.swift */,
 			);
 			path = "mario-plaid-test";
+			sourceTree = "<group>";
+		};
+		ACDC58691E3ED151004960C7 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				ACDC587A1E3EDCCA004960C7 /* fruit.jpg */,
+			);
+			name = assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +174,7 @@
 			files = (
 				AC3F3C201E3EA6DA00207274 /* LaunchScreen.storyboard in Resources */,
 				AC3F3C1D1E3EA6DA00207274 /* Assets.xcassets in Resources */,
+				ACDC587B1E3EDCCA004960C7 /* fruit.jpg in Resources */,
 				AC3F3C1B1E3EA6DA00207274 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDC58831E3F04EC004960C7 /* DataModel.swift in Sources */,
 				AC3F3C181E3EA6DA00207274 /* ViewController.swift in Sources */,
 				AC3F3C161E3EA6DA00207274 /* AppDelegate.swift in Sources */,
+				ACDC58811E3EFB44004960C7 /* accountCollectionViewCell.swift in Sources */,
+				ACDC587F1E3EF9FC004960C7 /* accountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

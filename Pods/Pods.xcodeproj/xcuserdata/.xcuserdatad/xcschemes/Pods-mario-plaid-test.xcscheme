@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'AA55256FFD4C48DE816242A5EB766249'
+               BlueprintIdentifier = '64EA08164C9A54AA5424D119BDD66951'
                BlueprintName = 'Pods-mario-plaid-test'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods-mario-plaid-test.framework'>

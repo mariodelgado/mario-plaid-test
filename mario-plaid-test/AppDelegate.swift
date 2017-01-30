@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
         Plaid.sharedInstance().setPublicKey("871761da2db20e4e8e3472f825f1d9")
-
         
         
         return true

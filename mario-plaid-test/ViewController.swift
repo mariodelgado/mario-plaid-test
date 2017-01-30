@@ -21,24 +21,44 @@ class ViewController: UIViewController, PLDLinkNavigationControllerDelegate
      @param navigationController The navigation controller presenting Plaid Link.
      */
     public func linkNavigationControllerDidFinish(withBankNotListed navigationController: PLDLinkNavigationViewController!) {
-        print("failed?")
+        print("Failed?")
 
     }
 
+    @IBOutlet weak var bg1: UIImageView!
+    @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var plaidButton: UIButton!
+    @IBOutlet weak var accessTokenLabel: UILabel!
+    @IBOutlet weak var bindingBG: UIView!
+    @IBOutlet weak var intro: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        bindingBG.layer.cornerRadius = 8
+        bindingBG.layer.shadowOpacity = 0.3
+        bindingBG.layer.shadowRadius = 28
+        bindingBG.layer.position.y = bindingBG.layer.position.y+100
+    }
+    @IBAction func startScreen(_ sender: Any) {
+        
+        UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.9, initialSpringVelocity: 0, options: .curveEaseInOut, animations: { 
+            self.bindingBG.layer.position.y = self.bindingBG.layer.position.y - 670
+            self.intro.layer.position.y = self.intro.layer.position.y - 700
+            self.intro.layer.opacity = 0
+            self.bg1.layer.position.y = self.bg1.layer.position.y - 300
+        }, completion: nil)
+        
     }
 
     @IBAction func plaidConnectButton(sender: AnyObject) {
-        let plaidLink = PLDLinkNavigationViewController(environment: .tartan, product: .connect)
+        let plaidLink = PLDLinkNavigationViewController(environment: .tartan, product: .auth)
         plaidLink?.linkDelegate = self
         plaidLink?.providesPresentationContextTransitionStyle = true
         plaidLink?.definesPresentationContext = true
         plaidLink?.modalPresentationStyle = .custom
+    
         
         self.present(plaidLink!, animated: true, completion: nil)
     }
@@ -46,6 +66,9 @@ class ViewController: UIViewController, PLDLinkNavigationControllerDelegate
     func linkNavigationContoller(_ navigationController: PLDLinkNavigationViewController!, didFinishWithAccessToken accessToken: String!) {
         print("success \(accessToken)")
         self.dismiss(animated: true, completion: nil)
+        let tokenString = "" + accessToken
+        self.accessTokenLabel.text = tokenString
+        
     }
     
     func linkNavigationControllerDidFinishWithBankNotListed(navigationController: PLDLinkNavigationViewController!) {
