@@ -9,6 +9,8 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import AFNetworking
+
 
 
 class accountViewController: UITableViewController
@@ -18,7 +20,7 @@ class accountViewController: UITableViewController
     var arrRes = [[String:AnyObject]]() //Array of dictionary
 
 
-
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         let todoEndpoint: String = "https://tartan.plaid.com/connect?client_id=test_id&secret=test_secret&username=plaid_test&password=plaid_good&type=citi"
