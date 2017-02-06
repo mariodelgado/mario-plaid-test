@@ -1,0 +1,42 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Alamofire (4.3.0)
+  - Haneke (1.0.2)
+  - plaid-ios-link (0.2.1):
+    - plaid-ios-sdk
+  - plaid-ios-sdk (0.3.6)
+  - SwiftyJSON (3.1.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - Alamofire
+  - Haneke
+  - plaid-ios-link
+  - plaid-ios-sdk
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
+  Haneke: 01454a67322faa0dd9d81fc0f447885044e71521
+  plaid-ios-link: 0ef45f18cdb2d1c3b9eaf6c2b457c950909df725
+  plaid-ios-sdk: e9865b0fe6a79b3d30d886171d7a26f7e1408935
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
+
+PODFILE CHECKSUM: f87f84a9715eec3accf5ff00e7293574287f0c0b
+
+COCOAPODS: 1.2.0
