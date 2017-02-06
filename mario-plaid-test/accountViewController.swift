@@ -78,15 +78,37 @@ class accountViewController: UIViewController,UITableViewDelegate,UITableViewDat
         var cell = tableView.dequeueReusableCell(withIdentifier: "AccountsTableViewCell")! as! AccountsTableViewCell
         
         
-       // let photo = self.data[indexPath.row]
+        
+        if self.data?.count != nil {
+            print("There are objects!")
+            let accountData = self.data[indexPath.row]
+
+      
+
+     let accountValue = accountData.value(forKeyPath: "balance.available") as! NSNumber
+            
+            
+            let largeNumber = accountValue
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = NumberFormatter.Style.decimal
+           // numberFormatter.string(from: largeNumber)
+            let acctValue:String = numberFormatter.string(from: largeNumber)!
+            cell.accountValue.text = acctValue
+
+        }else{
+        
+        let accountData = 0
+        }
+    
+        
+       // let accountData = self.data[indexPath.row]
         //let user = photo["user"] as! NSDictionary
         
-       // let username = photo.value(forKeyPath: "user.username") as! String
+        
       //  let photourl = photo.value(forKeyPath: "images.low_resolution.url") as! String
         
         
-        // cell.usernameLabel.text = user["username"] as! String
-        
+    
        // cell.accountName.text = username
        // cell.accountImage.setImageWith(NSURL(string: photourl)! as URL)
         
