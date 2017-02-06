@@ -6,65 +6,53 @@
 	<dict>
 		<key>AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Haneke.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-mario-plaid-test.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>plaid-ios-link-Resources.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>plaid-ios-link.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>plaid-ios-sdk-PLDResources.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>plaid-ios-sdk.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>19BF0EE96E3CE658017BB04B76BF25E8</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>2D66FF494205FAE5F2E8D8365F7DBEAC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>33F2BD901302B7F51824B3606AEC1E7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -74,17 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D373CD790D0309853E881E9FC53ED90</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>5497B6D858FAFE82E64CA36386879262</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>64EA08164C9A54AA5424D119BDD66951</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -99,12 +77,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA55256FFD4C48DE816242A5EB766249</key>
+		<key>CCAA040BB2E5BF64B20042BDA07A40E8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CF671F7E57B92905F1CC91D036D6B4A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D8958B4CA3D72223DA857D434B9A1115</key>
 		<dict>
 			<key>primary</key>
 			<true/>

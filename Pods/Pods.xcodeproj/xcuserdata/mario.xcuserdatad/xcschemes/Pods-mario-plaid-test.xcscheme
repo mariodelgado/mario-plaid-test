@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4D373CD790D0309853E881E9FC53ED90"
+               BlueprintIdentifier = "CCAA040BB2E5BF64B20042BDA07A40E8"
                BuildableName = "Pods_mario_plaid_test.framework"
                BlueprintName = "Pods-mario-plaid-test"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4D373CD790D0309853E881E9FC53ED90"
+            BlueprintIdentifier = "CCAA040BB2E5BF64B20042BDA07A40E8"
             BuildableName = "Pods_mario_plaid_test.framework"
             BlueprintName = "Pods-mario-plaid-test"
             ReferencedContainer = "container:Pods.xcodeproj">

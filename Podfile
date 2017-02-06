@@ -7,6 +7,7 @@ target 'mario-plaid-test' do
 
   # Pods for mario-plaid-test
 pod 'Alamofire'
+pod 'AFNetworking'
 pod 'Haneke'
 pod 'SwiftyJSON'
 pod 'plaid-ios-sdk'

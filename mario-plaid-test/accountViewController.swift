@@ -2,42 +2,66 @@
 //  accountViewController.swift
 //  mario-plaid-test
 //
-//  Created by Mario Delgado on 1/29/17.
+//  Created by Mario Delgado on 2/5/17.
 //  Copyright © 2017 Mario Delgado. All rights reserved.
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 import AFNetworking
 
-
-
-class accountViewController: UITableViewController
- {
+class accountViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    @IBOutlet weak var tableView: UITableView!
     
-    @IBOutlet var tblJSON: UITableView!
-    var arrRes = [[String:AnyObject]]() //Array of dictionary
+    var names: [String]!
+    var data: [NSDictionary]!
 
-
- 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let todoEndpoint: String = "https://tartan.plaid.com/connect?client_id=test_id&secret=test_secret&username=plaid_test&password=plaid_good&type=citi"
-        Alamofire.request( todoEndpoint , method: .post, parameters: nil, encoding: JSONEncoding.default, headers: nil).responseJSON { (responseData) -> Void in
-            if((responseData.result.value) != nil) {
-                let swiftyJsonVar = JSON(responseData.result.value!)
-                 debugPrint(responseData)
-                if let resData = swiftyJsonVar["accounts"].arrayObject {
-                    self.arrRes = resData as! [[String:AnyObject]]
-                   
-                }
-                debugPrint(self.arrRes.count)
-                if self.arrRes.count > 0 {
-                    self.tblJSON.reloadData()
+
+
+        
+        let url = NSURL(string: "https://tartan.plaid.com/connect?client_id=test_id&secret=test_secret&username=plaid_test&password=plaid_good&type=citi")!
+        let request = NSMutableURLRequest(url:url as URL);
+        request.httpMethod = "POST";
+
+       
+        let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) -> Void in
+            
+            if error != nil {
+                print("thers an error in the log")
+            } else {
+                
+                DispatchQueue.main.async() {
+                    let json = try! JSONSerialization.jsonObject(with: data! , options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
+                   print(json)
+                    
+                    self.data = json["accounts"] as! [NSDictionary]
+                    self.tableView.reloadData()
+
+                    
+                    print(self.data.count)
+                    
                 }
             }
+    
+    
+    
         }
+        
+        task.resume()
+
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+    
+    }
+    
+    func numberOfObjectsInMyArray() -> Int {
+        if self.data?.count != nil {
+            print("There are objects!")
+ return self.data.count        }
+
+        return 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -45,29 +69,29 @@ class accountViewController: UITableViewController
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell : UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "jsonCell")!
-        var dict = arrRes[indexPath.row]
-        cell.textLabel?.text = dict["meta"]?["name"] as? String
-        cell.detailTextLabel?.text = dict["subtype"] as? String
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return numberOfObjectsInMyArray()
+        
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "AccountsTableViewCell")! as! AccountsTableViewCell
+        
+        
+       // let photo = self.data[indexPath.row]
+        //let user = photo["user"] as! NSDictionary
+        
+       // let username = photo.value(forKeyPath: "user.username") as! String
+      //  let photourl = photo.value(forKeyPath: "images.low_resolution.url") as! String
+        
+        
+        // cell.usernameLabel.text = user["username"] as! String
+        
+       // cell.accountName.text = username
+       // cell.accountImage.setImageWith(NSURL(string: photourl)! as URL)
+        
         return cell
     }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrRes.count
-    }
-    
-    
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
